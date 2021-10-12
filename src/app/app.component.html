@@ -1,4 +1,13 @@
-<div class="easybank">
+<div id="container" class="easybank">
+  <div class="easybank__menu" [ngClass]="{'active': menuOpen}">
+    <div class="easybank__menu--container" *ngIf="menuOpen">
+      <span>Home</span>
+      <span>About</span>
+      <span>Contact</span>
+      <span>Blog</span>
+      <span>Careers</span>
+    </div>
+  </div>
   <div class="easybank__header">
     <img src="assets/images/logo.svg">
     <div class="easybank__header--links">
@@ -22,7 +31,8 @@
       <button>Request Invite</button>
     </div>
     <div class="easybank__header--menu">
-      <img src="assets/images/icon-hamburger.svg">
+      <img src="assets/images/icon-hamburger.svg" *ngIf="!menuOpen" (click)="openMenu(true)">
+      <img src="assets/images/icon-close.svg" *ngIf="menuOpen" (click)="openMenu(false)">
     </div>
   </div>
   <div class="easybank__content">
