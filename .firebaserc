@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "easybank-landing-page-e52e2": {
+      "hosting": {
+        "Easybank-Landing-Page": [
+          "easybank-landing-page-e52e2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "easybank-landing-page-e52e2"
+  }
+}
