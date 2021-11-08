@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "easybank-landing-page-425bd",
     "public": "dist",
     "ignore": [
       "firebase.json",
